@@ -1,0 +1,18 @@
+<!-- preact 需要监听本地网站服务器，不能直接打开index.html -->
+<html>
+<head>
+    <script type="module">
+        // 加载preact库
+        import { h, Component, render } from './lib/preact.js';
+        import htm from './lib/htm.js';
+        const html = htm.bind(h);
+        // 加载本地组件
+        import App from './components/App.js';
+        import ClassComponent from './components/ClassComponent.js';
+        import FunctionalComponent from './components/FunctionalComponent.js'
+        // preact渲染
+        render(html`<${App} />`, document.body);
+    </script>
+</head>
+<body></body>
+</html>
