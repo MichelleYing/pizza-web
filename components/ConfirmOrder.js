@@ -2,7 +2,7 @@ import { h, Component, render } from '../lib/preact.js';
 import htm from '../lib/htm.js';
 const html = htm.bind(h);
 
-class ClassComponent extends Component {
+class ConfirmOrder extends Component {
     constructor() {
         super();
         this.state = { 
@@ -26,7 +26,7 @@ class ClassComponent extends Component {
 
     render() {
         return html`
-            <div id="class-component">
+            <div id="confirm-order">
                 <form>
                     <span id="aa">Current Time: ${this.state.time} </span>
                     <input type="text" />
@@ -37,4 +37,4 @@ class ClassComponent extends Component {
     }
 }
 
-export default ClassComponent;
+export default ConfirmOrder;

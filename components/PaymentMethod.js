@@ -2,7 +2,7 @@ import { h, Component, render } from '../lib/preact.js';
 import htm from '../lib/htm.js';
 const html = htm.bind(h);
 
-class ClassComponent extends Component {
+class PaymentMethod extends Component {
     constructor() {
         super();
         this.state = { 
@@ -37,4 +37,4 @@ class ClassComponent extends Component {
     }
 }
 
-export default ClassComponent;
+export default PaymentMethod;

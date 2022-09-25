@@ -1,0 +1,117 @@
+/* menu layout */
+#menu {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    /* margin: 5vh 10vh; */
+}
+
+#menu h1 {
+    margin:auto;
+}
+
+#menu .menu-body {
+    flex: 8.5;
+    padding: 2%;
+    /* border: 2px solid red; */
+    flex-direction: row;
+    display: flex;
+}
+
+#menu .footer {
+    flex: 1.5;
+    padding: 5%;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu .footer-upper {
+    flex:1;
+}
+#menu .footer-lower {
+    flex:1;
+    text-align: right;
+}
+
+#menu .pizza,
+#menu .others {
+    flex:1;
+}
+
+#menu .pizza,
+#menu .others {
+    margin: 0px 20px;
+}
+
+#menu .other {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#menu .dessert,
+#menu .drink {
+    flex:1;
+    height:50%;
+}
+
+#menu h3 {
+    margin: 0 5px;
+    text-align: center;
+    border: 2px solid red;
+}
+
+#menu .pizza-item {
+    display:flex;
+    margin: 5px 5px 0 5px;
+}
+
+#menu .pizza-item .left,
+#menu .pizza-item .right {
+    flex:1;
+    margin: auto;
+}
+
+#menu .pizza-item .right {
+    display: flex;
+    justify-content: right;
+}
+
+#menu .pizza-item .right {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#menu .pizza-item .middle {
+    flex:3;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu .pizza-item .middle .pizza-name,
+#menu .pizza-item .middle .pizza-detail {
+    flex:1;
+}
+
+/* Pizza Item */
+#menu .pizza-item .middle .pizza-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#menu .pizza-item .middle .pizza-detail {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/* confirm order layout */
+#confirm-order {
+    display:none;
+}
