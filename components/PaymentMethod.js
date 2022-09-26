@@ -27,20 +27,11 @@ class PaymentMethod extends Component {
 
 
     goConfirmOrder() {
-        let payment = document.getElementById("payment");
-        payment.setAttribute("style", "display:none");
-
-        let confirm = document.getElementById("confirm");
-        confirm.setAttribute("style", "display:flex");
+        page.redirect("/confirm");
     }
 
     goOrderCompletion() {
-        console.log("test1")
-        let completion = document.getElementById("completion");
-        completion.setAttribute("style", "display:flex");
-
-        let payment = document.getElementById("payment");
-        payment.setAttribute("style", "display:none");
+        page.redirect("/completion");
     }
 
 
@@ -51,11 +42,11 @@ class PaymentMethod extends Component {
             <div id="payment">
                 <h1>PAYMENT METHOD</h1>
                 <div class="guest-info">
-                    <span class="name">Name: </span> <input placeholder="Your Name" />
-                    <span class="phone">Phone Number: </span> <input placeholder="Your Phone Number" />
-                    <span class="address">Address:  </span> <input placeholder="Your Address" />
-                    <span class="post-code">Post code: </span>  <input placeholder="Your Post Code" />
-                    <span class="credit">Credit Card Number: </span> <input placeholder="Your Credit Card Number" />
+                    <span class="name">Name: </span> <input class="input" placeholder="Your Name" />
+                    <span class="phone">Phone Number: </span> <input class="input" placeholder="Your Phone Number" />
+                    <span class="address">Address:  </span> <input class="input" placeholder="Your Address" />
+                    <span class="post-code">Post code: </span>  <input class="input" placeholder="Your Post Code" />
+                    <span class="credit">Credit Card Number: </span> <input class="input" placeholder="Your Credit Card Number" />
                 </div>
                 <div class="footer">
                     <button class="one" onClick="${this.goConfirmOrder}">Back</button>

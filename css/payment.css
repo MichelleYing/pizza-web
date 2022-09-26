@@ -72,8 +72,13 @@
 #payment .footer button {
     justify-content: center;
     width: 100px;
-    height: 30px;
+    height: 45px;
     cursor: pointer;
+}
+
+#payment .guest-info .input{
+    width: 350px;
+    height: 30px;
 }
 
 #payment .footer button.one {

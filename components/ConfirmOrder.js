@@ -51,11 +51,7 @@ class ConfirmOrder extends Component {
 
 
     goPaymentMethod() {
-        let confirm = document.getElementById("confirm");
-        confirm.setAttribute("style", "display:none");
-
-        let payment = document.getElementById("payment");
-        payment.setAttribute("style", "display:flex");
+        page.redirect("/payment");
     }
 
     goMenu() {
