@@ -27,16 +27,19 @@ class ConfirmOrder extends Component {
 
 
     createConfirmOrderItems() {
-        let detils = [
-            {itemName: "Pizza A", itemNum: "5"},
+        let details = [
+            {itemName: "Pizza A", itemNum: "5", itemPrice: "11.50"},
+            {itemName: "Pizza A", itemNum: "5", itemPrice: "5.50"},
+            {itemName: "Pizza A", itemNum: "5", itemPrice: "7.50"}
             
            
         ];
         let confirmOrderItems = html`
             ${
-                detils.map(function(detil) {
-                    return html`<${ConfirmOrderItem} itemName="${detils.itemName}" 
-                                                     itemNum="${detils.itemNum}"  />`;
+                details.map(function(detail) {
+                    return html`<${ConfirmOrderItem} itemName="${detail.itemName}" 
+                                                     itemNum="${detail.itemNum}"  
+                                                     itemPrice="${detail.itemPrice}"/>`;
                 })
             }
         `;
@@ -47,14 +50,19 @@ class ConfirmOrder extends Component {
 
 
     goPaymentMethod() {
-        let menu = document.getElementById("menu");
-        menu.setAttribute("style", "display:none");
-
-        let confirm = document.getElementById("confirm-order");
+        let confirm = document.getElementById("confirm");
         confirm.setAttribute("style", "display:none");
 
-        let payment = document.getElementById("payment-method");
-        confirm.setAttribute("style", "display:flex");
+        let payment = document.getElementById("payment");
+        payment.setAttribute("style", "display:flex");
+    }
+
+    goMenu() {
+        let menu = document.getElementById("menu");
+        menu.setAttribute("style", "display:flex");
+
+        let confirm = document.getElementById("confirm");
+        confirm.setAttribute("style", "display:none");
     }
 
 
@@ -63,7 +71,11 @@ class ConfirmOrder extends Component {
             <div id="confirm">
                 <h1>CONFIRM ORDER</h1>
                 <div class="confirm-body"> 
-                    <h3>ITEM NAME & NUM</h3>
+                    <div class="confirm-body-title">
+                        <span class="left">Item Name</span>
+                        <span class="middle">Unit Price</span>
+                        <span class="right">Units</span>
+                    </div>
                     <div class="items-name-num"> 
                         ${this.createConfirmOrderItems()}  
                     </div>
@@ -71,12 +83,21 @@ class ConfirmOrder extends Component {
 
                 <div class="footer">
                     <div class="footer-upper">
-                        total price
+                        <span class="one">Estimated Preparation Time: 10mins</span>
+                        <span class="two">Estimated Delivery Time: 10mins</span>
+                        <div class="three">
+                            <span>Enter Discount Code for <strong>10%</strong> Off</span>
+                            <input placeholder="Discount Code" />
+                        </div>
+                    </div>
+
+                    <div class="footer-middle">
+                        Total Price: $30.00
                     </div>
 
                     <div class="footer-lower">
-                        time
-                        <button onClick="${this.goPayment}">Pay</button>
+                        <button class="one" onClick="${this.goMenu}">Back</button>
+                        <button class="two" onClick="${this.goPaymentMethod}">Pay</button>
                     </div>
                 </div>
                 

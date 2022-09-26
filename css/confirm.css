@@ -1,0 +1,124 @@
+/* confirm order layout */
+#confirm {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#confirm h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* 以上是测试 */
+#confirm .confirm-body-title {
+    display: flex;
+}
+
+#confirm .confirm-body-title .left {
+    flex:7;
+    display: flex;
+    justify-content: start;
+}
+
+#confirm .confirm-body-title .middle {
+    flex:2;
+    display: flex;
+    justify-content: start;
+}
+
+#confirm .confirm-body-title .right{
+    flex:2;
+    display: flex;
+    justify-content: end;
+}
+
+#confirm .item-name-num {
+    display:flex;
+    flex-direction: row;
+}
+
+#confirm .item-name-num .left {
+    flex:7;
+    margin: 5px 0;
+}
+
+#confirm .item-name-num .middle {
+    flex:2;
+    margin: 5px 0;
+}
+
+#confirm .item-name-num .right {
+    flex:2;
+    margin: 5px 0;
+    justify-content: end;
+    display: flex;
+}
+
+#confirm .confirm-body,
+#confirm .footer {
+    margin: 1% 5%;
+}
+
+#confirm .confirm-body-title {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#confirm .footer .footer-upper {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#confirm .footer .footer-upper .one,
+#confirm .footer .footer-upper .two,
+#confirm .footer .footer-upper .three {
+    display: flex;
+}
+#confirm .footer .footer-upper .three {
+    margin-top: 10px;
+    font-weight: 600;
+    font-family: poppins;
+}
+
+#confirm .footer .footer-upper .three strong {
+    font-size: 25px;
+}
+
+#confirm .footer .footer-upper .three input {
+    margin-left: 20px;
+}
+
+#confirm .footer .footer-middle {
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#confirm .footer .footer-lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#confirm .footer .footer-lower button {
+    margin:auto;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#confirm .footer .footer-lower button.one {
+    margin-left:0;
+}
+
+#confirm .footer .footer-lower button.two {
+    margin-right:0;
+}
+
+
+

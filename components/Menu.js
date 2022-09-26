@@ -94,7 +94,7 @@ class Menu extends Component {
         let menu = document.getElementById("menu");
         menu.setAttribute("style", "display:none");
 
-        let confirm = document.getElementById("confirm-order");
+        let confirm = document.getElementById("confirm");
         confirm.setAttribute("style", "display:flex");
     }
 

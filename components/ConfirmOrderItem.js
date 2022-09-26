@@ -8,6 +8,7 @@ class ConfirmOrderItem extends Component {
         this.state = { 
             time: new Date().toLocaleString(),
             itemName: props.itemName,
+            itemPrice: props.itemPrice,
             itemNum: props.itemNum
         };
     }
@@ -25,14 +26,16 @@ class ConfirmOrderItem extends Component {
     render() {
         return html`
             <div id="confirm-order-item">
-                <div id="item-name-num">
+                <div class="item-name-num">
                     <div class="left">
                         ${this.state.itemName}
                     </div>
-                    <div class="right">
-                        ${this.state.itemNum}
+                    <div class="middle">
+                        \$${this.state.itemPrice}
                     </div>
-                    <hr />
+                    <div class="right">
+                        × ${this.state.itemNum}
+                    </div>
                 </div>
                 <hr />
             </div>

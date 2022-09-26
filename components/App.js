@@ -15,8 +15,10 @@ class App extends Component {
     render() {
         return html`
             <div>
-                <${Menu} id="menu-parent"/>
+                <${Menu} />
                 <${ConfirmOrder} />
+                <${PaymentMethod} />
+
             </div>
         `;
     }
