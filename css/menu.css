@@ -21,7 +21,7 @@
 #menu .footer {
     flex: 1.5;
     padding: 3%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: row;
 }
@@ -37,7 +37,7 @@
 }
 #menu .footer-lower button {
     width: 150px;
-    height: 30px;
+    height: 50px;
     cursor: pointer;
 }
 
