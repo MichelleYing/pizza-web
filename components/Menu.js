@@ -127,11 +127,10 @@ class Menu extends Component {
 
                 <div class="footer">
                     <div class="footer-upper">
-                        upper
+                        <strong> Estimated Price: $35</strong>
                     </div>
 
                     <div class="footer-lower">
-                        lower
                         <button onClick="${this.goConfirmOrder}">Order</button>
                     </div>
                 </div>

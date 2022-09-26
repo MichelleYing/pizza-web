@@ -20,18 +20,25 @@
 
 #menu .footer {
     flex: 1.5;
-    padding: 5%;
+    padding: 3%;
     border: 2px solid blue;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 #menu .footer-upper {
     flex:1;
+    margin: 0;
+    font-size: 20px;
 }
-#menu .footer-lower {
-    flex:1;
-    text-align: right;
+
+#menu .footer-upper strong{
+    font-family: poppins;
+}
+#menu .footer-lower button {
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
 }
 
 #menu .pizza,
@@ -103,6 +110,8 @@
 #menu .pizza-item .middle .pizza-detail {
     font-size: 12px;
 }
+
+
 
 
 
