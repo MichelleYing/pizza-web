@@ -26,7 +26,7 @@ class PaymentMethod extends Component {
 
     render() {
         return html`
-            <div id="class-component">
+            <div id="payment">
                 <form>
                     <span id="aa">Current Time: ${this.state.time} </span>
                     <input type="text" />

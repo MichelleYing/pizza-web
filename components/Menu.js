@@ -53,10 +53,10 @@ class Menu extends Component {
 
     createDessertItems() {
         let desserts = [
-            {itemName: "Dessert A", price: 5, vegetarian: "is vegeterain", detail:"spicy, fruite apple orange, onion, green curry"},
-            {itemName: "Dessert B"},
-            {itemName: "Dessert C"},
-            {itemName: "Dessert D"}
+            {itemName: "Dessert A", price: 5,  detail:"spicy,  orange"},
+            {itemName: "Dessert B" ,price: 5,  detail:"spicy,  orange"},
+            {itemName: "Dessert C" ,price: 5,  detail:"spicy,  orange"},
+            {itemName: "Dessert D" ,price: 5,  detail:"spicy,  orange"}
         ];
         let dessertItems = html`
             ${
@@ -73,10 +73,9 @@ class Menu extends Component {
 
     createDrinkItems() {
         let drinks = [
-            {itemName: "Drink A", price: 5, vegetarian: "is vegeterain", detail:"spicy, fruite apple orange, onion, green curry"},
-            {itemName: "Drink B"},
-            {itemName: "Drink C"},
-            {itemName: "Drink D"}
+            {itemName: "Drink A", price: 5,  detail:"spicy, fruite apple orange"},
+            {itemName: "Drink B", price: 5,  detail:"spicy, fruite apple orange"},
+           
         ];
         let drinkItems = html`
             ${

@@ -1,0 +1,86 @@
+/* confirm order layout */
+#confirm-order {
+    display:flex;
+}
+
+#menu {
+    display:none;
+}
+/* 以上是测试 */
+#confirm {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    /* margin: 5vh 10vh; */
+}
+
+#confirm h1 {
+    margin:auto;
+}
+
+#confirm .confirm-body {
+    flex: 8.5;
+    padding: 2%;
+    border: 2px solid red;
+    flex-direction: row;
+    display: flex;
+}
+
+#confirm .footer {
+    flex: 1.5;
+    padding: 5%;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+
+#confirm .footer-upper {
+    flex:1;
+}
+#confirm .footer-lower {
+    flex:1;
+    text-align: right;
+}
+
+
+
+
+/* confirm-body */
+#confirm .confirm-body  {
+    display:flex;
+    justify-content: left;
+    height: 100%;
+    margin: 0px 30px;
+    
+}
+
+#confirm .confirm-body h3{
+    height: 20px;
+    border: 2px solid grey;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#confirm .comfirm-order-item {
+    display:flex;
+    border: 2px solid grey;
+}
+
+#confirm .item-name-num {
+    display:flex;
+}
+
+#confirm .item-name-num .left {
+    flex:8;
+    margin: 5px ;
+    border: 2px solid grey;
+}
+
+#confirm .item-name-num .right {
+    flex:1;
+    margin: 5px ;
+    border: 2px solid grey;
+}
+
+
+
