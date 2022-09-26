@@ -26,7 +26,7 @@ class OrderCompletion extends Component {
 
     render() {
         return html`
-            <div id="class-component">
+            <div id="completion">
                 <form>
                     <span id="aa">Current Time: ${this.state.time} </span>
                     <input type="text" />

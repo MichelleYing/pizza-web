@@ -4,13 +4,13 @@
     flex-direction: column;
     justify-content: center;
 }
+/* 以上是测试 */
 
 #confirm h1 {
     display: flex;
     justify-content: center;
 }
 
-/* 以上是测试 */
 #confirm .confirm-body-title {
     display: flex;
 }

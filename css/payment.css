@@ -1,3 +1,88 @@
+/* payment layout */
 #payment {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+/* 以上是测试 */
+#payment .guest-info {
+    flex: 8.5;
+    padding: 2%;
+    /* border: 2px solid red; */
+    flex-direction: column;
+    display: flex;
+}
+
+#payment .footer {
+    flex: 1.5;
+    padding: 3%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+}
+
+#payment h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#payment .guest-info .name,
+#payment .guest-info .phone,
+#payment .guest-info .address,
+#payment .guest-info .post-code,
+#payment .guest-info .credit{
+    width: 180px;
+    
+}
+
+#payment .guest-info .name{
+    display: flex;
+    justify-content: left;
+    margin: 10px 0;
+    
+}
+
+#payment .guest-info .phone{
+    display: flex;
+    justify-content: left;
+    margin: 10px 0;
+}
+
+#payment .guest-info .address{
+    display: flex;
+    justify-content: left;
+    margin: 10px 0;
+}
+#payment .guest-info .post-code{
+    display: flex;
+    justify-content: left;
+    margin: 10px 0;
+}
+
+#payment .guest-info .credit{
+    display: flex;
+    justify-content: left;
+    margin: 10px 0;
+}
+
+#payment .footer button {
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#payment .footer button.one {
+    margin:auto;
+    margin-left:0;
+
+}
+
+#payment .footer button.two {
+    margin:auto;
+    margin-right:0;
 }
