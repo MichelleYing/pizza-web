@@ -1,5 +1,6 @@
 import { h, Component, render } from '../lib/preact.js';
 import htm from '../lib/htm.js';
+import page from "../lib/page.mjs";
 const html = htm.bind(h);
 
 class PaymentMethod extends Component {
@@ -34,6 +35,7 @@ class PaymentMethod extends Component {
     }
 
     goOrderCompletion() {
+        console.log("test1")
         let completion = document.getElementById("completion");
         completion.setAttribute("style", "display:flex");
 

@@ -1,5 +1,6 @@
 import { h, Component, render } from '../lib/preact.js';
 import htm from '../lib/htm.js';
+import page from "../lib/page.mjs";
 const html = htm.bind(h);
 
 class OrderCompletion extends Component {

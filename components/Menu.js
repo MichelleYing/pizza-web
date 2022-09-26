@@ -1,6 +1,7 @@
 import { h, Component, render } from '../lib/preact.js';
 import htm from '../lib/htm.js';
 import MenuItem from './MenuItem.js';
+import page from "../lib/page.mjs";
 const html = htm.bind(h);
 
 class Menu extends Component {
@@ -91,11 +92,7 @@ class Menu extends Component {
     }
 
     goConfirmOrder() {
-        let menu = document.getElementById("menu");
-        menu.setAttribute("style", "display:none");
-
-        let confirm = document.getElementById("confirm");
-        confirm.setAttribute("style", "display:flex");
+        page.redirect("/confirm");
     }
 
     render() {

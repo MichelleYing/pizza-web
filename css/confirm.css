@@ -1,6 +1,6 @@
 /* confirm order layout */
 #confirm {
-    display: none;
+    /* display: none; */
     flex-direction: column;
     justify-content: center;
 }
